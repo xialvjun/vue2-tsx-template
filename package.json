@@ -13,10 +13,10 @@
     "vue-router": "^3.3.4"
   },
   "devDependencies": {
+    "@vue/babel-preset-jsx": "^1.1.2",
     "@vue/cli-plugin-babel": "^4.4.6",
     "@vue/cli-plugin-typescript": "^4.4.6",
     "@vue/cli-service": "^4.4.6",
-    "babel-preset-vca-jsx": "^0.3.6",
     "less-loader": "^6.2.0",
     "typescript": "^3.9.7",
     "vue-template-compiler": "^2.6.11"

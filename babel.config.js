@@ -1,3 +1,6 @@
 module.exports = {
-  presets: ["vca-jsx", "@vue/cli-plugin-babel/preset"],
+  presets: [
+    ["@vue/jsx"],
+    ["@vue/app", { jsx: { injectH: false } }],
+  ],
 };

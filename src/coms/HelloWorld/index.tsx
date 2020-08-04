@@ -1,5 +1,11 @@
-import style from './HelloWorld.module.less';
+import style from './index.module.less';
 import { defineComponent, PropType } from '@vue/composition-api';
+
+// ? Support
+// export default (...args) => {
+//   console.log(args);
+//   return <p>hello asfasf</p>
+// }
 
 export default defineComponent({
   name: 'HelloWorld',
@@ -16,7 +22,8 @@ export default defineComponent({
       type: (null as unknown) as PropType<(event: MouseEvent) => void>,
     }
   },
-  setup(props) {
+  // ! 必须改成 箭头函数, 防止 @vue/babel-preset-jsx 添加 const h = this.$createElement;
+  setup: (props) => {
     return () => (
       <div>
         <h1 onClick={props.eventClick}>{props.msg}</h1>
