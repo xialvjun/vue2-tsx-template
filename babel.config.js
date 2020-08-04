@@ -1,6 +1,3 @@
 module.exports = {
-  presets: [
-    ["@vue/jsx"],
-    ["@vue/app", { jsx: { injectH: false } }],
-  ],
+  presets: [["@vue/jsx"], ["@vue/app", { jsx: { injectH: false } }]],
 };
